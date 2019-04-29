@@ -2,7 +2,7 @@ stages:
   - build
 
 variables:
-  CONTAINER_STAGING_IMAGE: registry.arcdev.ru/arcsinus/postgres:latest
+  CONTAINER_STAGING_IMAGE: registry.arcdev.ru/arcsinus/postgres:11
 
 before_script:
   - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.arcdev.ru
